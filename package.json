@@ -1,0 +1,40 @@
+{
+  "name": "coven",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.4.0",
+    "@openzeppelin/test-helpers": "^0.5.3",
+    "antd": "^3.24.3",
+    "bn.js": "^5.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "truffle-privatekey-provider": "^1.3.0",
+    "web3": "^1.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy:local": "truffle migrate --network development --reset",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "deploy:rinkeby": "truffle migrate --network rinkeby --reset",
+    "deploy:kovan": "truffle migrate --network kovan --reset",
+    "test:kovan": "truffle test test/covenshare_kovan.js --network kovan"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
