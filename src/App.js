@@ -245,7 +245,7 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          <Header><h1>COVEN</h1></Header>
+          <Header style={{ backgroundColor: 'black' }}><span style={{ fontSize: 'x-large' }}>COVEN</span> @Kovan Testnet</Header>
           <Content>
             <Tabs defaultActiveKey={this.state.defaultActiveKey}>
               <TabPane tab="Members" key="1">
